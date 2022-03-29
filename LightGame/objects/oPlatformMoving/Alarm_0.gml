@@ -1,0 +1,2 @@
+
+currentSpeed = platformSpeed

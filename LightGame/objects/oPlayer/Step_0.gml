@@ -41,6 +41,7 @@ if (_movingPlatform && bbox_bottom <= _movingPlatform.bbox_top) {
 	y += _movingPlatform.moveY;
 }
 
+
 //Wall Collisions -----
 //If the player is about to run into a wall
 if (place_meeting(x + xSpeed, y, oWall)) { 
@@ -50,8 +51,6 @@ if (place_meeting(x + xSpeed, y, oWall)) {
 	xSpeed = 0; 
 }
 
-
-
 //While the player is about to fall onto a wall
 if (place_meeting(x, y + ySpeed, oWall)) {
 	//Pixel perfect collision
@@ -60,6 +59,29 @@ if (place_meeting(x, y + ySpeed, oWall)) {
 	}
 	ySpeed = 0; 
 }
+
+//Crusher Collisions -----
+if (instance_place(x, y - 1, oCrusher) && instance_place(x, y + 1, oWall)) {
+	x = 48;
+	y = 208;
+}
+else {
+	if (place_meeting(x + xSpeed, y, oCrusher)) { 
+		while (!place_meeting(x + sign(xSpeed), y, oCrusher)) {
+			x += sign(xSpeed);
+		}
+		xSpeed = 0; 
+	}
+
+	if (place_meeting(x, y + ySpeed, oCrusher)) {
+		//Pixel perfect collision
+		while (place_meeting(x, y + sign(ySpeed), oCrusher)) {
+			y += 1;
+		}
+		ySpeed = 0; 
+	}
+}
+
 
 x += xSpeed;
 y += ySpeed;

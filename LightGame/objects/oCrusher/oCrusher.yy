@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "sWall",
-    "path": "sprites/sWall/sWall.yy",
+    "name": "sPlatformMoving",
+    "path": "sprites/sPlatformMoving/sPlatformMoving.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oPlatformMoving",
+    "path": "objects/oPlatformMoving/oPlatformMoving.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -28,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oWall",
+  "name": "oCrusher",
   "tags": [],
   "resourceType": "GMObject",
 }

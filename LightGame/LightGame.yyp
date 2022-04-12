@@ -8,6 +8,7 @@
     {"id":{"name":"StoneBricks","path":"tilesets/StoneBricks/StoneBricks.yy",},"order":0,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":1,},
     {"id":{"name":"Bricks","path":"sprites/Bricks/Bricks.yy",},"order":0,},
+    {"id":{"name":"oCrusher","path":"objects/oCrusher/oCrusher.yy",},"order":6,},
     {"id":{"name":"oLight_Renderer","path":"objects/oLight_Renderer/oLight_Renderer.yy",},"order":0,},
     {"id":{"name":"oLightingCutout","path":"objects/oLightingCutout/oLightingCutout.yy",},"order":1,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":3,},

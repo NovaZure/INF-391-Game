@@ -14,7 +14,7 @@ draw_clear_alpha(c_black, 0.95);
 
 
 with(oPlayer) {
-	var playerWobble = 0.01
+	var playerWobble = 0.03
 	var wobble_amount = random_range(-playerWobble, playerWobble);
 	
 	//Cut out a hole, then add in a new color and intensity defined by the lighting cutout obj
